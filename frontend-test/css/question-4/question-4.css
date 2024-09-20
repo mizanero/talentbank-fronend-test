@@ -1,0 +1,27 @@
+  :root {
+    --btn-background-color: #3498db;
+    --btn-text-color: white;
+    --btn-padding: 10px 20px;
+  }
+  
+  .btn {
+    background-color: var(--btn-background-color);
+    color: var(--btn-text-color);
+    padding: var(--btn-padding);
+    border: none;
+    cursor: pointer;
+  }
+
+  .container {
+    --box-color: #f39c12; /* Define a variable for the container */
+  }
+  
+  .box-1 {
+    background-color: var(--box-color); /* Uses the container's variable */
+  }
+  
+  .box-2 {
+    --box-color: #8e44ad; /* Override variable in this element's scope */
+    background-color: var(--box-color); /* Uses the overridden value */
+  }
+  
